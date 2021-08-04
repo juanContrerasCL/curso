@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function multiply(number1, number2, number3) {
+      console.log(number1 * number2 * number3);
+  }
+  
+  let numbers = [6,3,7];
+  let result3 = multiply(...numbers);
+  
+  console.log(result3);
+
+  function multiplyAll(...args) {
+    let result = 1;
+    for (let arg of args){
+      result *= arg;
+    }
+    return result;
+  }
+  console.log(multiplyAll(4,3,2));
+
+  var shooterGames = ['Call of Duty', 'Far Cry', 'Resident Evil' ];
+  var racingGames = ['Need For Speed', 'Gran Turismo', 'Burnout'];
+  var games = [...shooterGames, ...racingGames];
+  console.log("Vector Unificado -> "+games);
+
+  let numbers2 = [1,2,300,-1,0,-100];
+  console.log(Math.min(...numbers2));
+
+  const mergeSort = arr => {
+    if (arr.length < 2) {
+      return arr;
+    }
+
+    const middle = parseInt(arr.length / 2);
+    const left = arr.slice(0, middle);
+    const right = arr.slice(middle);
+    const merge = (left, right) => {
+      const result = [];
+      let il = ir = 0;
+
+      while (il < left.length && ir < right.length) {
+        result.push( (left[il] < right[ir]) ? left[il++] : right[ir++] );
+      }
+
+      return [...result, ...left.slice(il), ...right.slice(ir)];
+    }
+
+    return merge(mergeSort(left), mergeSort(right));
+  }
+
+  const arr2 = ['Pereira', 'Bogotá', 'Cali', 'Armenia', 'Cartagena', 'Neiva', 'Leticia', 'Valledupar', 'Bolívar', 'Manizales', 'Meta'];
+  const result2 = mergeSort(arr2);
+
+  console.log(result2);
+
+</script>
+</html>

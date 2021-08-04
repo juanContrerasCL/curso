@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  const bubbleSort = arr_sort => {
+  const l = arr_sort.length;
+  for (let i = 0; i < l; i++ ) {
+    for (let j = 0; j < l - 1 - i; j++ ) {
+      if ( arr_sort[ j ] > arr_sort[ j + 1 ] ) {
+        [ arr_sort[ j ], arr_sort[ j + 1 ] ] = [ arr_sort[ j + 1 ], arr_sort[ j ] ];
+      }
+    }
+  }
+
+  return arr_sort;
+};
+
+const array_unsort = ['Pereira', 'Bogotá', 'Cali', 'Armenia', 'Cartagena', 'Neiva', 'Leticia', 'Valledupar', 'Bolívar', 'Manizales', 'Meta'];
+const result = bubbleSort(array_unsort);
+
+console.log(result);
+
+
+</script>
+</html>

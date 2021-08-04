@@ -1,0 +1,23 @@
+	body {
+		background-color: white;
+	}
+				
+	.header-img {
+		width: 100%;
+		min-height: 50px;
+	}
+
+	.MainTitle {
+		text-align: center;
+		position: absolute;
+		color: white;
+		top: -2%;
+		width: 100%
+	}
+			
+	#map {
+		margin: auto;
+		width: 95%;
+		border: 1px solid #73AD21;
+		padding: 25%;
+	}

@@ -1,0 +1,4 @@
+Con base en los conocimientos adquiridos en Javascript, construya una solución que permita acceder de manera automática al endpoint:
+http://serviciosgis.catastrobogota.gov.co/otrosservicios/rest/services/educacion/inversion/MapServer/0/query
+Y obtenga las longitudes y latitude del COD_LOCA = 15 en dos arrays (Uno para la longitud y otro para la latitud) y visualícelos en pantalla en una tabla de datos, centrada en pantalla y con los títulos longitud y latitud centrados dentro de la tabla y los datos alineados a la derecha.
+Emplee toda su capacidad investigativa y de creatividad para hacer que la visualización sea agradable para el usuario final.
