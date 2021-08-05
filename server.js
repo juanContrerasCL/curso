@@ -14,7 +14,7 @@ router.get('/', function(req, res){
 );
 
 router.get('/proyecto1', function(req, res){
-	res.sendFile(path + '/proyectos/taller1/index.html');
+	res.sendFile(path + '/proyectos/taller1/indexJC.html');
  }
 );
 
